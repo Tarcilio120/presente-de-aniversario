@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-bright": "#3c3554",
+            "primary-fixed": "#ffe088",
+            "tertiary-container": "#c1a3ff",
+            "surface-variant": "#373050",
+            "on-secondary": "#640039",
+            "primary-container": "#d4af37",
+            "on-error": "#690005",
+            "inverse-on-surface": "#332c4b",
+            "secondary-fixed": "#ffd9e4",
+            "outline-variant": "#4d4635",
+            "on-primary": "#3c2f00",
+            "outline": "#99907c",
+            "on-secondary-fixed-variant": "#8c0053",
+            "tertiary-fixed-dim": "#d2bbff",
+            "tertiary": "#d9c5ff",
+            "on-surface-variant": "#d0c5af",
+            "on-surface": "#e7deff",
+            "on-tertiary-container": "#5800c1",
+            "on-secondary-fixed": "#3e0022",
+            "background": "#150e2c",
+            "surface-container-high": "#2c2544",
+            "surface-container-lowest": "#100927",
+            "error-container": "#93000a",
+            "on-secondary-container": "#ffbad3",
+            "inverse-surface": "#e7deff",
+            "surface-dim": "#150e2c",
+            "surface-container-low": "#1d1735",
+            "surface": "#150e2c",
+            "surface-tint": "#e9c349",
+            "secondary": "#ffb0cd",
+            "on-tertiary-fixed-variant": "#5a00c6",
+            "primary": "#f2ca50",
+            "primary-fixed-dim": "#e9c349",
+            "on-primary-container": "#554300",
+            "on-tertiary": "#3f008e",
+            "inverse-primary": "#735c00",
+            "error": "#ffb4ab",
+            "on-error-container": "#ffdad6",
+            "surface-container-highest": "#373050",
+            "secondary-container": "#aa0266",
+            "secondary-fixed-dim": "#ffb0cd",
+            "tertiary-fixed": "#eaddff",
+            "on-primary-fixed-variant": "#574500",
+            "on-primary-fixed": "#241a00",
+            "surface-container": "#221b39",
+            "on-tertiary-fixed": "#25005a",
+            "on-background": "#e7deff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.75rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "space-2xl": "4.5rem",
+            "space-xl": "3rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": [
+              "Playfair Display"
+            ],
+            "title-md": [
+              "Outfit"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ],
+            "title-lg": [
+              "Outfit"
+            ],
+            "headline-lg": [
+              "Playfair Display"
+            ],
+            "label-lg": [
+              "Outfit"
+            ],
+            "label-md": [
+              "Outfit"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "label-sm": [
+              "Outfit"
+            ],
+            "headline-md": [
+              "Playfair Display"
+            ],
+            "display-hero-mobile": [
+              "Playfair Display"
+            ],
+            "headline-sm": [
+              "Outfit"
+            ],
+            "display-hero": [
+              "Playfair Display"
+            ],
+            "body-sm": [
+              "Plus Jakarta Sans"
+            ]
+          },
+          "fontSize": {
+            "headline-lg-mobile": [
+              "32px",
+              {
+                "lineHeight": "38px",
+                "fontWeight": "600"
+              }
+            ],
+            "title-md": [
+              "16px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "500"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "400"
+              }
+            ],
+            "title-lg": [
+              "20px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg": [
+              "44px",
+              {
+                "lineHeight": "52px",
+                "fontWeight": "600"
+              }
+            ],
+            "label-lg": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "letterSpacing": "0.08em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-md": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.05em",
+                "fontWeight": "500"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "400"
+              }
+            ],
+            "label-sm": [
+              "11px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.06em",
+                "fontWeight": "500"
+              }
+            ],
+            "headline-md": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "fontWeight": "600"
+              }
+            ],
+            "display-hero-mobile": [
+              "40px",
+              {
+                "lineHeight": "48px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-sm": [
+              "22px",
+              {
+                "lineHeight": "30px",
+                "letterSpacing": "0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "display-hero": [
+              "64px",
+              {
+                "lineHeight": "72px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "20px",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        },
+      },
+    }</script>
+</head>
+
+<body
+  class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen relative overflow-x-hidden">
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-secondary-container/20 blur-[140px]">
+    </div>
+    <div class="absolute top-1/3 -right-40 w-[550px] h-[550px] rounded-full bg-tertiary-container/15 blur-[150px]">
+    </div>
+    <div class="absolute -bottom-20 left-1/4 w-[700px] h-[700px] rounded-full bg-primary-container/15 blur-[160px]">
+    </div>
+  </div>
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_30px_rgba(16,9,39,0.5)]">
+    <div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between relative"><a
+        class="flex items-center gap-space-sm group text-left" data-path="inicio" href="#inicio">
+        <div
+          class="w-11 h-11 rounded-full bg-surface-container-highest/90 flex items-center justify-center shadow-[0_0_18px_rgba(212,175,55,0.25)] group-hover:shadow-[0_0_24px_rgba(242,202,80,0.5)] transition-all">
+          <span class="font-headline-sm text-headline-sm text-primary tracking-tighter">P</span><span
+            class="font-headline-sm text-headline-sm text-secondary -ml-1">20</span></div>
+        <div class="hidden sm:flex flex-col"><span
+            class="font-title-md text-title-md tracking-wider text-primary uppercase font-bold leading-none">PDC
+            20</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mt-0.5">Patrícia
+            Amélia • 22 Set</span></div>
+      </a>
+      <nav
+        class="hidden md:flex items-center gap-space-xs p-1.5 rounded-full bg-surface-container-low/70 backdrop-blur-md"
+        data-active-classes="bg-primary text-on-primary font-semibold rounded-full shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all"
+          data-path="inicio" href="#inicio">Início</a><a
+          class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all"
+          data-path="memorias" href="#memorias">Memórias</a><a
+          class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all"
+          data-path="mensagem" href="#mensagem">Mensagem</a><a
+          class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all"
+          data-path="20-anos" href="#20-anos">20 Anos</a><a
+          class="px-space-md py-space-xs rounded-full font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all"
+          data-path="linha-do-tempo" href="#linha-do-tempo">Linha do Tempo</a></nav>
+      <div class="flex items-center gap-space-sm">
+      </div>
+  </header>
+  <main class="w-full pt-20 bg-transparent relative z-10">
+    <div class="flex flex-col w-full selection:bg-primary selection:text-on-primary">
+      <!-- Interactive Canvas Layer for Floating Particles & Confetti Cannon -->
+      <canvas class="fixed inset-0 pointer-events-none z-30 w-full h-full" id="birthday-canvas"></canvas>
+      <!-- ========================================== -->
+      <!-- SEÇÃO 1: HERO JUBILEE & CELEBRAÇÃO NOBRE   -->
+      <!-- ========================================== -->
+      <section
+        class="relative w-full min-h-[942px] flex items-center justify-center overflow-hidden px-margin-mobile lg:px-margin py-space-2xl -mt-20 pt-28"
+        id="inicio">
+        <!-- Atmospheric animated aura backgrounds -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+          <div
+            class="absolute -top-32 left-1/2 -translate-x-1/2 w-[780px] h-[780px] rounded-full bg-gradient-to-tr from-secondary-container/25 via-tertiary-container/20 to-primary-container/25 blur-[140px] animate-pulse">
+          </div>
+          <div class="absolute bottom-10 -left-20 w-[420px] h-[420px] rounded-full bg-secondary/15 blur-[120px]"></div>
+          <div class="absolute top-1/4 -right-20 w-[460px] h-[460px] rounded-full bg-primary/15 blur-[130px]"></div>
+        </div>
+        <!-- Decorative floating balloons SVG layer -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden select-none z-0">
+          <!-- Balloon 1 (Gold) -->
+          <div class="absolute bottom-[-10%] left-[8%] animate-[float_9s_ease-in-out_infinite] opacity-65">
+            <svg fill="none" height="96" viewbox="0 0 68 96" width="68" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialgradient cx="35%" cy="30%" id="balloonGold" r="70%">
+                  <stop offset="0%" stop-color="#FFE088"></stop>
+                  <stop offset="50%" stop-color="#F2CA50"></stop>
+                  <stop offset="100%" stop-color="#554300"></stop>
+                </radialgradient>
+              </defs>
+              <ellipse cx="34" cy="40" fill="url(#balloonGold)" rx="30" ry="38"></ellipse>
+              <polygon fill="#D4AF37" points="34,78 30,84 38,84"></polygon>
+              <path d="M34,84 Q30,90 35,96" fill="none" opacity="0.6" stroke="#FFE088" stroke-width="1.5"></path>
+              <ellipse cx="24" cy="26" fill="#FFFFFF" opacity="0.3" rx="6" ry="12" transform="rotate(-20 24 26)">
+              </ellipse>
+            </svg>
+          </div>
+          <!-- Balloon 2 (Rose orchid) -->
+          <div class="absolute bottom-[-15%] right-[10%] animate-[float_11s_ease-in-out_infinite_1.8s] opacity-60">
+            <svg fill="none" height="114" viewbox="0 0 68 96" width="84" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialgradient cx="35%" cy="30%" id="balloonRose" r="70%">
+                  <stop offset="0%" stop-color="#FFD9E4"></stop>
+                  <stop offset="50%" stop-color="#FFB0CD"></stop>
+                  <stop offset="100%" stop-color="#AA0266"></stop>
+                </radialgradient>
+              </defs>
+              <ellipse cx="34" cy="40" fill="url(#balloonRose)" rx="30" ry="38"></ellipse>
+              <polygon fill="#AA0266" points="34,78 30,84 38,84"></polygon>
+              <path d="M34,84 Q38,90 32,96" fill="none" opacity="0.6" stroke="#FFBAD3" stroke-width="1.5"></path>
+              <ellipse cx="24" cy="26" fill="#FFFFFF" opacity="0.35" rx="7" ry="14" transform="rotate(-20 24 26)">
+              </ellipse>
+            </svg>
+          </div>
+          <!-- Balloon 3 (Royal violet/gold hint) -->
+          <div
+            class="absolute bottom-[-12%] right-[26%] hidden sm:block animate-[float_13s_ease-in-out_infinite_3.2s] opacity-45">
+            <svg fill="none" height="80" viewbox="0 0 68 96" width="55" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialgradient cx="35%" cy="30%" id="balloonPurple" r="70%">
+                  <stop offset="0%" stop-color="#EADDFF"></stop>
+                  <stop offset="50%" stop-color="#C1A3FF"></stop>
+                  <stop offset="100%" stop-color="#5800C1"></stop>
+                </radialgradient>
+              </defs>
+              <ellipse cx="34" cy="40" fill="url(#balloonPurple)" rx="30" ry="38"></ellipse>
+              <polygon fill="#5800C1" points="34,78 30,84 38,84"></polygon>
+              <path d="M34,84 Q32,91 36,96" fill="none" opacity="0.5" stroke="#D9C5FF" stroke-width="1.2"></path>
+              <ellipse cx="23" cy="24" fill="#FFFFFF" opacity="0.3" rx="5" ry="10" transform="rotate(-20 23 24)">
+              </ellipse>
+            </svg>
+          </div>
+        </div>
+        <!-- Hero Content Container -->
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+          <!-- Royal Milestone Crown Badge -->
+          <div
+            class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-xl shadow-lg shadow-black/40 mb-space-md">
+            <span class="material-symbols-outlined text-primary text-[18px]">crown</span>
+            <span class="font-label-md text-label-md uppercase tracking-widest text-primary font-semibold">✨ 22 DE
+              SETEMBRO • SPECIAL JUBILEE ✨</span>
+            <span class="material-symbols-outlined text-secondary text-[18px]">favorite</span>
+          </div>
+          <!-- Main Majestic Hero Title with Gilded Glow -->
+          <h1
+            class="font-headline-lg text-headline-lg md:text-[68px] md:leading-[76px] tracking-tight text-on-surface mb-space-sm font-bold drop-shadow-[0_4px_30px_rgba(242,202,80,0.35)]">
+            Feliz Aniversário, <span
+              class="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">Patrícia!</span>
+          </h1>
+          <!-- Typewriter Subtitle Container -->
+          <div class="min-h-[58px] sm:min-h-[44px] flex items-center justify-center mb-space-lg px-2">
+            <p class="font-headline-sm text-headline-sm text-on-surface-variant max-w-2xl font-light italic text-center"
+              id="typewriter-text">
+              <span id="typewriter-content">Celebrando a vida, a beleza e a essência única de Patrícia Amélia Daniel
+                Chilaule</span>
+              <span class="inline-block w-0.5 h-5 bg-primary ml-1 animate-pulse align-middle"></span>
+            </p>
+          </div>
+          <!-- Action Buttons Row -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
+            <a class="w-full sm:w-auto px-space-lg py-space-sm rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-semibold shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-space-xs group"
+              href="#memorias">
+              <span
+                class="material-symbols-outlined text-[20px] group-hover:rotate-12 transition-transform">photo_library</span>
+              <span>Explorar Memórias</span>
+            </a>
+            <a class="w-full sm:w-auto px-space-lg py-space-sm rounded-full bg-surface-container-high/90 text-on-surface font-label-lg text-label-lg uppercase tracking-wider font-semibold backdrop-blur-md shadow-lg shadow-black/30 hover:bg-surface-variant hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-space-xs text-secondary group"
+              href="#mensagem">
+              <span
+                class="material-symbols-outlined text-[20px] text-secondary group-hover:scale-125 transition-transform animate-pulse"
+                style="font-variation-settings: 'FILL' 1;">favorite</span>
+              <span class="text-on-surface">Ler Mensagem de Carinho</span>
+            </a>
+          </div>
+          <!-- Elegant Floating Decorative Anchor -->
+          <div class="mt-space-xl flex flex-col items-center gap-space-xs text-on-surface-variant/70 animate-bounce">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Descobrir Cada
+              Detalhe</span>
+            <span class="material-symbols-outlined text-primary text-[22px]">keyboard_arrow_down</span>
+          </div>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- SEÇÃO 2: CARROSSEL DE MEMÓRIAS (MOLDURAS)  -->
+      <!-- ========================================== -->
+      <section class="w-full px-margin-mobile lg:px-margin py-space-2xl relative" id="memorias">
+        <div class="max-w-6xl mx-auto mb-space-xl text-center">
+          <div
+            class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-high mb-space-sm shadow-md text-primary">
+            <span class="material-symbols-outlined text-[26px]">filter_vintage</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold mb-space-xs">
+            Galeria de Momentos Inesquecíveis
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Cada fotografia e cada registro em vídeo são verdadeiros tesouros, moldurados em ouro nobre, eternizando a luz,
+            a beleza e os instantes mais radiantes dos seus vinte anos de vida.
+          </p>
+        </div>
+        <!-- Carousel Component Frame -->
+        <div class="relative max-w-7xl mx-auto">
+          <!-- Carousel Navigation Controls -->
+          <div class="flex items-center justify-between absolute -top-14 right-0 gap-space-xs z-20">
+            <button aria-label="Momento Anterior"
+              class="w-11 h-11 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary shadow-lg shadow-black/40 flex items-center justify-center transition-all active:scale-90"
+              id="carousel-prev">
+              <span class="material-symbols-outlined text-[22px]">arrow_back</span>
+            </button>
+            <button aria-label="Próximo Momento"
+              class="w-11 h-11 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary shadow-lg shadow-black/40 flex items-center justify-center transition-all active:scale-90"
+              id="carousel-next">
+              <span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+            </button>
+          </div>
+          <!-- Horizontal Scrollable Track -->
+          <div class="overflow-hidden" id="memory-outer">
+            <div
+              class="flex gap-space-lg overflow-x-auto scroll-smooth pb-space-lg pt-space-sm px-space-xs snap-x snap-mandatory no-scrollbar cursor-grab select-none"
+              id="memory-track">
+            <!-- Frame 1: Foto 1 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(-1.5deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Beleza Singular" src="Foto1.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">Beleza</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">Beleza Singular</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 2: Vídeo 1 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(1.2deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffd9e4] via-[#b63071] to-[#420025] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(255,176,205,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(255,176,205,0.55)] transition-all">
+                <div class="bg-[#fdf7f9] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <video id="vid1" class="w-full h-full object-cover" muted loop playsinline preload="metadata"><source src="Video1.mp4" type="video/mp4" /></video>
+                    <div id="ov1" class="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent flex flex-col items-center justify-center p-4" style="transition:opacity 0.3s ease">
+                      <span class="px-2.5 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container font-label-sm uppercase tracking-widest font-semibold mb-3 shadow-md">Vídeo</span>
+                      <button onclick="var v=document.getElementById('vid1');v.play();document.getElementById('ov1').style.opacity='0';document.getElementById('ov1').style.pointerEvents='none'" class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_0_30px_rgba(242,202,80,0.8)] hover:scale-110 active:scale-95 transition-all cursor-pointer" type="button"><span class="material-symbols-outlined text-[34px] ml-1" style="font-variation-settings:'FILL' 1">play_arrow</span></button>
+                      <span class="font-label-sm text-on-surface mt-2 drop-shadow">Toque para Assistir</span>
+                    </div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#3b1225] font-semibold">Momento Inesquecível</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 3: Foto 2 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(-1deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Sorriso de Ouro" src="Foto2.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">Encanto</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">Sorriso de Ouro</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 4: Vídeo 2 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(0.8deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#eaddff] via-[#6f42c1] to-[#25005a] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(193,163,255,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(193,163,255,0.55)] transition-all">
+                <div class="bg-[#f8f5ff] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <video id="vid2" class="w-full h-full object-cover" muted loop playsinline preload="metadata"><source src="Video2.mp4" type="video/mp4" /></video>
+                    <div id="ov2" class="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent flex flex-col items-center justify-center p-4" style="transition:opacity 0.3s ease">
+                      <span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm uppercase tracking-widest font-semibold mb-3 shadow-md">Vídeo</span>
+                      <button onclick="var v=document.getElementById('vid2');v.play();document.getElementById('ov2').style.opacity='0';document.getElementById('ov2').style.pointerEvents='none'" class="w-16 h-16 rounded-full bg-primary-fixed text-on-primary flex items-center justify-center shadow-[0_0_30px_rgba(242,202,80,0.85)] hover:scale-110 active:scale-95 transition-all cursor-pointer" type="button"><span class="material-symbols-outlined text-[34px] ml-1" style="font-variation-settings:'FILL' 1">play_arrow</span></button>
+                      <span class="font-label-sm text-on-surface mt-2 drop-shadow">Toque para Assistir</span>
+                    </div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#1e1335] font-semibold">Risos que Encantam</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 5: Foto 3 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(-1.3deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Olhar Cativante" src="Foto3.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">Olhar</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">Olhar Cativante</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 6: Vídeo 3 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(1deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffd9e4] via-[#b63071] to-[#420025] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(255,176,205,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(255,176,205,0.55)] transition-all">
+                <div class="bg-[#fdf7f9] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <video id="vid3" class="w-full h-full object-cover" muted loop playsinline preload="metadata"><source src="Video3.mp4" type="video/mp4" /></video>
+                    <div id="ov3" class="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent flex flex-col items-center justify-center p-4" style="transition:opacity 0.3s ease">
+                      <span class="px-2.5 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container font-label-sm uppercase tracking-widest font-semibold mb-3 shadow-md">Vídeo</span>
+                      <button onclick="var v=document.getElementById('vid3');v.play();document.getElementById('ov3').style.opacity='0';document.getElementById('ov3').style.pointerEvents='none'" class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_0_30px_rgba(242,202,80,0.8)] hover:scale-110 active:scale-95 transition-all cursor-pointer" type="button"><span class="material-symbols-outlined text-[34px] ml-1" style="font-variation-settings:'FILL' 1">play_arrow</span></button>
+                      <span class="font-label-sm text-on-surface mt-2 drop-shadow">Toque para Assistir</span>
+                    </div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#3b1225] font-semibold">Essência Pura</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 7: Foto 4 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(-0.5deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Graça Divina" src="Foto4.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">Graça</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">Graça Divina</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 8: Vídeo 4 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(-0.9deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#eaddff] via-[#6f42c1] to-[#25005a] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(193,163,255,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(193,163,255,0.55)] transition-all">
+                <div class="bg-[#f8f5ff] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <video id="vid4" class="w-full h-full object-cover" muted loop playsinline preload="metadata"><source src="Video4.mp4" type="video/mp4" /></video>
+                    <div id="ov4" class="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent flex flex-col items-center justify-center p-4" style="transition:opacity 0.3s ease">
+                      <span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm uppercase tracking-widest font-semibold mb-3 shadow-md">Vídeo</span>
+                      <button onclick="var v=document.getElementById('vid4');v.play();document.getElementById('ov4').style.opacity='0';document.getElementById('ov4').style.pointerEvents='none'" class="w-16 h-16 rounded-full bg-primary-fixed text-on-primary flex items-center justify-center shadow-[0_0_30px_rgba(242,202,80,0.85)] hover:scale-110 active:scale-95 transition-all cursor-pointer" type="button"><span class="material-symbols-outlined text-[34px] ml-1" style="font-variation-settings:'FILL' 1">play_arrow</span></button>
+                      <span class="font-label-sm text-on-surface mt-2 drop-shadow">Toque para Assistir</span>
+                    </div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#1e1335] font-semibold">Luz que Brilha</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 9: Foto 5 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(1.5deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Doçura sem Igual" src="Foto5.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">Doçura</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">Doçura sem Igual</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 10: Vídeo 5 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(-1.1deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffd9e4] via-[#b63071] to-[#420025] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(255,176,205,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(255,176,205,0.55)] transition-all">
+                <div class="bg-[#fdf7f9] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <video id="vid5" class="w-full h-full object-cover" muted loop playsinline preload="metadata"><source src="video5.mp4" type="video/mp4" /></video>
+                    <div id="ov5" class="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent flex flex-col items-center justify-center p-4" style="transition:opacity 0.3s ease">
+                      <span class="px-2.5 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container font-label-sm uppercase tracking-widest font-semibold mb-3 shadow-md">Vídeo</span>
+                      <button onclick="var v=document.getElementById('vid5');v.play();document.getElementById('ov5').style.opacity='0';document.getElementById('ov5').style.pointerEvents='none'" class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_0_30px_rgba(242,202,80,0.8)] hover:scale-110 active:scale-95 transition-all cursor-pointer" type="button"><span class="material-symbols-outlined text-[34px] ml-1" style="font-variation-settings:'FILL' 1">play_arrow</span></button>
+                      <span class="font-label-sm text-on-surface mt-2 drop-shadow">Toque para Assistir</span>
+                    </div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#3b1225] font-semibold">Charme Irresistível</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 11: Foto 6 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(0.6deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Elegância Real" src="Foto6.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">Elegância</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">Elegância Real</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 12: Foto 7 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(-1.8deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Alma Bela" src="Foto7.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">Carinho</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">Alma Bela</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 13: Foto 8 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(1.3deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Felicidade Radiante" src="Foto8.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">Felicidade</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">Felicidade Radiante</h4></div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 14: Foto 9 -->
+            <div class="snap-center shrink-0 w-[300px] sm:w-[350px] group transition-all duration-500 hover:scale-105" style="transform: rotate(0.4deg);">
+              <div class="p-3 sm:p-4 rounded-xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_20px_45px_rgba(16,9,39,0.85),0_0_20px_rgba(242,202,80,0.25)] group-hover:shadow-[0_25px_55px_rgba(16,9,39,0.95),0_0_35px_rgba(242,202,80,0.55)] transition-all">
+                <div class="bg-[#fcfaf2] p-3 rounded-lg shadow-inner flex flex-col">
+                  <div class="relative aspect-[3/4] overflow-hidden rounded shadow-md bg-surface-container-highest">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Rainha dos 20" src="Foto9.jpeg" />
+                    <div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm font-semibold uppercase tracking-wider">20 Anos</div>
+                  </div>
+                  <div class="pt-2 text-center"><h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-semibold">20 Anos</h4></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================================== -->
+      <!-- SEÇÃO 4: MENSAGEM ESPECIAL (CARTA REAL VERBATIM DOURADA) -->
+      <!-- ======================================================== -->
+      <section class="w-full px-margin-mobile lg:px-margin py-space-2xl relative overflow-hidden" id="mensagem">
+        <!-- Atmospheric glows behind the royal letter -->
+        <div
+          class="absolute -top-24 left-1/4 w-[500px] h-[500px] rounded-full bg-secondary-container/20 blur-[130px] pointer-events-none">
+        </div>
+        <div
+          class="absolute -bottom-24 right-1/4 w-[500px] h-[500px] rounded-full bg-primary-container/20 blur-[140px] pointer-events-none">
+        </div>
+        <div class="max-w-4xl mx-auto relative z-10">
+          <!-- Section Tag Header -->
+          <div class="text-center mb-space-lg">
+            <span
+              class="px-space-md py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-widest font-semibold inline-block mb-space-xs">
+              Palavras Sinceras • De Coração Para Coração
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+              Uma Declaração do Coração
+            </h2>
+          </div>
+          <!-- Luxury Letter Container with Filigree Touches & Glassmorphism -->
+          <div
+            class="relative p-6 sm:p-12 rounded-2xl bg-surface-container-low/75 backdrop-blur-2xl shadow-[0_20px_60px_rgba(16,9,39,0.9),0_0_35px_rgba(212,175,55,0.15)] overflow-hidden">
+            <!-- Royal Filigree Corner Ornaments (SVG) -->
+            <div class="absolute top-4 left-4 text-primary/40 pointer-events-none">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <path d="M4 4 C16 4 28 8 36 16 C28 24 24 36 24 44" stroke="currentColor" stroke-linecap="round"
+                  stroke-width="1.5"></path>
+                <circle cx="8" cy="8" fill="currentColor" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="absolute top-4 right-4 text-primary/40 pointer-events-none rotate-90">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <path d="M4 4 C16 4 28 8 36 16 C28 24 24 36 24 44" stroke="currentColor" stroke-linecap="round"
+                  stroke-width="1.5"></path>
+                <circle cx="8" cy="8" fill="currentColor" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="absolute bottom-4 left-4 text-primary/40 pointer-events-none -rotate-90">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <path d="M4 4 C16 4 28 8 36 16 C28 24 24 36 24 44" stroke="currentColor" stroke-linecap="round"
+                  stroke-width="1.5"></path>
+                <circle cx="8" cy="8" fill="currentColor" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="absolute bottom-4 right-4 text-primary/40 pointer-events-none rotate-180">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <path d="M4 4 C16 4 28 8 36 16 C28 24 24 36 24 44" stroke="currentColor" stroke-linecap="round"
+                  stroke-width="1.5"></path>
+                <circle cx="8" cy="8" fill="currentColor" r="2.5"></circle>
+              </svg>
+            </div>
+            <!-- Golden Big Quote Icon -->
+            <div class="flex justify-center mb-space-md">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-tr from-primary-container to-primary flex items-center justify-center shadow-lg shadow-primary/30">
+                <span class="material-symbols-outlined text-on-primary text-[36px]"
+                  style="font-variation-settings: 'FILL' 1;">format_quote</span>
+              </div>
+            </div>
+            <!-- EXACT VERBATIM MESSAGE TEXT -->
+            <div class="space-y-space-lg max-w-2xl mx-auto text-center">
+              <p class="font-headline-md text-headline-md text-on-surface leading-relaxed font-normal tracking-wide">
+                Patrícia,
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Há coisas que a gente não planeia sentir. Simplesmente acontecem. E, de alguma forma, tu foste uma dessas coisas bonitas que aconteceram na minha vida.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                É engraçado pensar que, antes mesmo de conhecer o teu rosto, já havia alguma coisa em ti que me chamava a atenção. E quando finalmente te vi, tive aquela sensação difícil de explicar, mas que eu não conseguia ignorar: havia algo diferente em ti.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Desde <strong class="text-primary font-semibold">15 de setembro de 2024</strong>, tenho tido a oportunidade de conversar contigo, conhecer-te aos poucos, descobrir os teus jeitos, as tuas manias, os teus pensamentos e até aquelas pequenas coisas que talvez nem percebas que fazem parte de quem és.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                E quanto mais te conheço, mais gosto da pessoa que encontro.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Talvez tu nem saibas, mas, de certa forma, acabaste por te tornar uma inspiração para mim. Não porque tenhas tentado ocupar esse lugar, mas simplesmente porque ser teu amigo, conversar contigo e observar a pessoa que és despertou em mim vontade de ser melhor também.
+              </p>
+              <p class="font-headline-sm text-headline-sm text-primary leading-relaxed font-semibold italic tracking-wide">
+                Eu gosto de ti. Muito.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                E não é só pela tua aparência ou por aquilo que os meus olhos conseguem ver. Gosto da tua maneira de ser, da tua presença, das pequenas coisas que fazem de ti a Patrícia que eu conheço.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Gosto da pessoa que és hoje e admiro a mulher que ainda estás a tornar-te.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                E existe uma coisa que sempre quis que entendesses sobre o que sinto por ti: <strong class="text-on-surface font-semibold">nunca foi sobre possuir-te.</strong>
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Para mim, tu és como uma rosa. Eu não quero arrancá-la do jardim só porque é bonita. Quero vê-la crescer, florescer e tornar-se cada vez mais bonita. Quero poder regá-la, cuidar dela e admirá-la, mesmo sabendo que uma rosa não pertence a quem a admira.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Talvez seja essa uma das formas mais sinceras que encontrei para explicar o que sinto.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Hoje, porém, não quero fazer desta carta apenas uma declaração sobre os meus sentimentos. Quero falar de ti e desejar-te coisas boas.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Quero que Deus cuide de ti, dos teus passos, das tuas escolhas e do teu coração. Que Ele te dê sabedoria quando não souberes qual caminho seguir, força quando os dias forem difíceis e paz quando a vida parecer confusa.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Espero que nunca te faltem motivos para sorrir, pessoas que te amem de verdade e coragem para correr atrás dos teus sonhos.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                E agora que estás a completar <strong class="text-primary font-semibold">20 anos</strong>, espero que este novo capítulo seja ainda mais bonito que os anteriores.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Que tenhas novas experiências, novas conquistas, muitos momentos felizes e, acima de tudo, que continues a descobrir quem és e a construir a mulher que queres ser.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                E talvez uma das coisas mais sinceras que consigo dizer-ta seja esta:
+              </p>
+              <p class="font-headline-sm text-headline-sm text-primary leading-relaxed font-semibold italic tracking-wide">
+                Eu amo-te, mas não quero que o meu amor se torne um peso para ti.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Não quero que sintas que tens de corresponder, nem que precisas de dar uma resposta só porque sabes o que sinto.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                O que sinto é meu. E eu escolho cuidar disso com respeito.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Se algum dia os nossos caminhos se aproximarem de uma forma diferente, vou receber isso com muita alegria. Mas, independentemente do que o futuro trouxer, quero continuar a desejar o teu bem.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Quero ver-te feliz. Quero ver-te crescer. Quero ver-te conquistar as coisas que sonhas.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                E, se algum dia eu puder fazer parte de alguma dessas conquistas, será um privilégio.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Mas mesmo que a vida nos leve por caminhos diferentes, nunca vou considerar um desperdício ter-te conhecido.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Porque conhecer-te já foi, por si só, uma coisa bonita.
+              </p>
+              <p class="font-headline-md text-headline-md text-on-surface leading-relaxed font-semibold tracking-wide">
+                Feliz aniversário, Patrícia Amélia Daniel Chilaule. ❤️
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Que os teus 20 anos sejam apenas o começo de uma fase incrível da tua vida.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Que Deus te abençoe, te proteja e te conduza em cada passo.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                E que, quando olhares para trás daqui a muitos anos, possas lembrar-te deste dia com um sorriso.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Obrigado por existires.
+              </p>
+            </div>
+            <!-- Elegant Dedication Signature Ribbon -->
+            <div class="mt-space-xl pt-space-md flex flex-col items-center justify-center">
+              <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mb-space-sm"></div>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed text-center mb-space-sm">
+                Com todo o carinho, respeito e admiração,
+              </p>
+              <div class="flex items-center gap-space-xs text-secondary">
+                <span class="material-symbols-outlined text-[18px]"
+                  style="font-variation-settings: 'FILL' 1;">favorite</span>
+                <span class="font-headline-sm text-headline-sm text-primary italic font-serif">
+                  Tarcílio
+                </span>
+                <span class="material-symbols-outlined text-[18px]"
+                  style="font-variation-settings: 'FILL' 1;">favorite</span>
+              </div>
+              <span class="font-label-sm text-label-sm text-on-surface-variant/80 mt-1 italic">
+                Como carinhosamente me chamas: AnDy.
+              </span>
+              <span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/80 mt-2">22 de
+                Setembro ❤️🌹</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================================== -->
+      <!-- SEÇÃO: MÚSICA — DESCUBRA CADA DETALHE                    -->
+      <!-- ======================================================== -->
+      <section class="w-full px-margin-mobile lg:px-margin py-space-2xl relative overflow-hidden" id="musica">
+        <div class="max-w-2xl mx-auto text-center mb-space-lg">
+          <div
+            class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md border border-secondary/20 text-secondary font-label-md text-label-md uppercase tracking-widest mb-space-sm shadow-md">
+            <span class="material-symbols-outlined text-[18px]">music_note</span>
+            <span>Descobre Cada Detalhe</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold mb-space-xs">
+            As Bandas e Artistas que Enchem a Minha Alma
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">
+            Música que toca fundo, artistas que inspiram. Cada um com uma energia especial  e todas merecem ser ouvidas.
+          </p>
+        </div>
+        <!-- Artist Carousel -->
+        <div class="overflow-x-auto scroll-smooth pb-4 pt-2 px-4 snap-x snap-mandatory no-scrollbar cursor-grab select-none" id="music-track">
+          <div class="flex gap-5" style="width:max-content;">
+
+            <!-- Artist Card 1 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(-1.5deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#fcfaf2] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-yellow-300 via-amber-400 to-yellow-600 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-bold">Beyoncé</h4>
+                    <p class="font-label-sm text-label-sm text-[#2b2110]/60 mt-0.5">Pop · R&B · Soul</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Card 2 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(1deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#ffd9e4] via-[#b63071] to-[#420025] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#fdf7f9] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-pink-300 via-rose-500 to-pink-700 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#3b1225] font-bold">Força Suprema</h4>
+                    <p class="font-label-sm text-label-sm text-[#3b1225]/60 mt-0.5"> Rap</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Card 3 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(-0.8deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#eaddff] via-[#6f42c1] to-[#25005a] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#f8f5ff] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-violet-300 via-purple-500 to-violet-700 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#1e1335] font-bold">Chase Atlantic</h4>
+                    <p class="font-label-sm text-label-sm text-[#1e1335]/60 mt-0.5">Indie Rock</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Card 4 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(1.2deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#fcfaf2] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-orange-300 via-orange-500 to-red-600 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-bold">Arctic Monkeys</h4>
+                    <p class="font-label-sm text-label-sm text-[#2b2110]/60 mt-0.5">Indie Rock </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Card 5 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(-1.1deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#ffd9e4] via-[#b63071] to-[#420025] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#fdf7f9] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-rose-300 via-rose-500 to-red-700 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#3b1225] font-bold">Lana Del Rey</h4>
+                    <p class="font-label-sm text-label-sm text-[#3b1225]/60 mt-0.5"> Pop · Dream</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Card 6 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(0.7deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#eaddff] via-[#6f42c1] to-[#25005a] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#f8f5ff] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-emerald-300 via-teal-500 to-emerald-700 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#1e1335] font-bold">Cigarettes After Sex</h4>
+                    <p class="font-label-sm text-label-sm text-[#1e1335]/60 mt-0.5">Dream Pop · Ambient</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Card 7 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(-0.5deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#ffe088] via-[#a3801f] to-[#574500] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#fcfaf2] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-sky-300 via-blue-500 to-indigo-600 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#2b2110] font-bold">The Weeknd</h4>
+                    <p class="font-label-sm text-label-sm text-[#2b2110]/60 mt-0.5">R&B · Synth Pop</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Card 8 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(1.4deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#ffd9e4] via-[#b63071] to-[#420025] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#fdf7f9] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-fuchsia-300 via-pink-500 to-fuchsia-700 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#3b1225] font-bold">Tyla</h4>
+                    <p class="font-label-sm text-label-sm text-[#3b1225]/60 mt-0.5">Amapiano</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Card 9 -->
+            <div class="snap-center shrink-0 w-[200px] sm:w-[240px] group transition-all duration-500 hover:scale-105" style="transform:rotate(-1.3deg)">
+              <div class="p-3 rounded-2xl bg-gradient-to-br from-[#eaddff] via-[#6f42c1] to-[#25005a] shadow-[0_12px_35px_rgba(16,9,39,0.8)] group-hover:shadow-[0_16px_45px_rgba(16,9,39,0.95)] transition-all">
+                <div class="bg-[#f8f5ff] rounded-xl overflow-hidden flex flex-col">
+                  <div class="aspect-square bg-gradient-to-br from-slate-300 via-slate-500 to-slate-700 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white/90 text-[64px]" style="font-variation-settings:'FILL' 1">person</span>
+                  </div>
+                  <div class="p-3 text-center">
+                    <h4 class="font-headline-sm text-headline-sm text-[#1e1335] font-bold">Radiohead</h4>
+                    <p class="font-label-sm text-label-sm text-[#1e1335]/60 mt-0.5">Alt Rock · Art Rock</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- ======================================================== -->
+      <!-- SEÇÃO 5: CELEBRAÇÃO & CONTAGEM DOS 20 ANOS               -->
+      <!-- ======================================================== -->
+      <section class="w-full px-margin-mobile lg:px-margin py-space-2xl relative" id="20-anos">
+        <div class="max-w-6xl mx-auto">
+          <!-- Section Title & Sparkles Header -->
+          <div class="text-center mb-space-xl">
+            <div
+              class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md uppercase tracking-widest mb-space-xs">
+              <span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+              <span>Um Legado em Construção</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+              20 Anos de Luz e Graça
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mt-2">
+              Vinte voltas ao redor do sol repletas de histórias, sorrisos compartilhados e uma trajetória que inspira a
+              todos.
+            </p>
+          </div>
+          <!-- Giant Metallic Counters Bento Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-xl">
+            <!-- Counter 1: ANOS -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container/70 backdrop-blur-md shadow-xl text-center group hover:bg-surface-container-high transition-all">
+              <div
+                class="w-12 h-12 rounded-full bg-primary/20 text-primary mx-auto mb-space-sm flex items-center justify-center">
+                <span class="material-symbols-outlined text-[24px]">cake</span>
+              </div>
+              <div
+                class="font-headline-lg text-[56px] sm:text-[68px] leading-tight font-bold bg-gradient-to-b from-[#ffe088] via-[#f2ca50] to-[#b38914] bg-clip-text text-transparent"
+                id="counter-anos">
+                --
+              </div>
+              <div class="font-title-lg text-title-lg text-on-surface font-semibold mt-1">ANOS</div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                De existência deslumbrante, nobreza de espírito e luz própria inabalável.
+              </p>
+            </div>
+            <!-- Counter 2: DIAS -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container/70 backdrop-blur-md shadow-xl text-center group hover:bg-surface-container-high transition-all">
+              <div
+                class="w-12 h-12 rounded-full bg-secondary/20 text-secondary mx-auto mb-space-sm flex items-center justify-center">
+                <span class="material-symbols-outlined text-[24px]">wb_sunny</span>
+              </div>
+              <div
+                class="font-headline-lg text-[56px] sm:text-[68px] leading-tight font-bold bg-gradient-to-b from-[#ffd9e4] via-[#ffb0cd] to-[#b63071] bg-clip-text text-transparent"
+                id="counter-dias">
+                --
+              </div>
+              <div class="font-title-lg text-title-lg text-on-surface font-semibold mt-1">DIAS</div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                De sorrisos distribuídos e passos firmes moldando uma mulher extraordinária.
+              </p>
+            </div>
+            <!-- Counter 3: HORAS DE BRILHO -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container/70 backdrop-blur-md shadow-xl text-center group hover:bg-surface-container-high transition-all">
+              <div
+                class="w-12 h-12 rounded-full bg-tertiary/20 text-tertiary mx-auto mb-space-sm flex items-center justify-center">
+                <span class="material-symbols-outlined text-[24px]">auto_awesome</span>
+              </div>
+              <div
+                class="font-headline-lg text-[48px] sm:text-[58px] leading-tight font-bold bg-gradient-to-b from-[#eaddff] via-[#d2bbff] to-[#7c3aed] bg-clip-text text-transparent"
+                id="counter-horas">
+                --
+              </div>
+              <div class="font-title-lg text-title-lg text-on-surface font-semibold mt-1">HORAS DE BRILHO</div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Iluminando cada caminho e tocando com doçura as pessoas ao seu redor.
+              </p>
+            </div>
+          </div>
+          <!-- Festive Blessings Banner with Sparkle Illustration -->
+          <div
+            class="p-space-lg rounded-2xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-2xl">
+            <div class="flex items-center gap-space-md">
+              <div
+                class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/25">
+                <span class="material-symbols-outlined text-on-primary text-[32px]">award_star</span>
+              </div>
+              <div>
+                <h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Desejos Eternos para o Jubileu
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Saúde inabalável, sabedoria contínua,
+                  grandes conquistas e felicidade sem medidas.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-space-md">
+              <span class="material-symbols-outlined text-[32px] text-primary">celebration</span>
+              <span class="material-symbols-outlined text-[32px] text-secondary">cake</span>
+              <span class="material-symbols-outlined text-[32px] text-tertiary">auto_awesome</span>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================================== -->
+      <!-- SEÇÃO 5B: LINHA DO TEMPO ("MESMO LONGE, NUNCA PAREI...")  -->
+      <!-- ======================================================== -->
+      <section class="w-full px-margin-mobile lg:px-margin py-space-2xl relative overflow-hidden" id="linha-do-tempo">
+        <!-- Ambient background glow accents -->
+        <div
+          class="absolute top-1/4 -left-32 w-[520px] h-[520px] rounded-full bg-primary-container/15 blur-[160px] pointer-events-none">
+        </div>
+        <div
+          class="absolute bottom-1/4 -right-32 w-[520px] h-[520px] rounded-full bg-secondary-container/15 blur-[160px] pointer-events-none">
+        </div>
+
+        <div class="max-w-5xl mx-auto relative z-10">
+          <!-- Section Header -->
+          <div class="text-center mb-space-2xl">
+            <div
+              class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md border border-primary/20 text-primary font-label-md text-label-md uppercase tracking-widest mb-space-sm shadow-md">
+              <span class="material-symbols-outlined text-[18px]">history_edu</span>
+              <span>Linha de Conexão</span>
+              <span class="material-symbols-outlined text-secondary text-[16px]">favorite</span>
+            </div>
+            <h2
+              class="font-headline-lg text-headline-lg md:text-[50px] md:leading-[58px] text-on-surface font-bold mb-space-xs">
+              O tempo não apaga o que é verdadeiro; ele apenas organiza tudo para que o reencontro faça sentido.
+            </h2>
+            <p
+              class="font-headline-sm text-headline-sm text-on-surface-variant/90 max-w-2xl mx-auto font-light italic mt-2">
+              Há 2 anos e 4 meses que te conheço. E eu não sei que presente eu poderia te dar.
+            </p>
+          </div>
+
+          <!-- Timeline Container -->
+          <div class="relative max-w-4xl mx-auto">
+            <!-- Central Glowing Fine Line -->
+            <div
+              class="absolute left-4 md:left-1/2 top-4 bottom-8 w-[2px] -translate-x-1/2 bg-gradient-to-b from-primary/30 via-primary to-secondary/40 shadow-[0_0_12px_rgba(242,202,80,0.45)] timeline-vertical-line">
+            </div>
+
+            <!-- Timeline Milestones Wrapper -->
+            <div class="space-y-12 md:space-y-16 relative">
+
+              <!-- Milestone 1: 20 de Maio de 2024 (Left on desktop) -->
+              <div
+                class="relative flex flex-col md:flex-row items-start md:items-center timeline-item transition-all duration-700">
+                <div class="md:w-1/2 md:pr-12 pl-12 md:pl-0 text-left md:text-right w-full">
+                  <div
+                    class="p-6 rounded-2xl bg-surface-container-low/85 backdrop-blur-xl border border-primary/25 shadow-[0_10px_35px_rgba(16,9,39,0.7),0_0_18px_rgba(242,202,80,0.12)] hover:border-primary/50 transition-all group">
+                    <div
+                      class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-2">
+                      <span class="material-symbols-outlined text-[14px]">local_florist</span>
+                      <span>O Início Encantado</span>
+                    </div>
+                    <div class="font-headline-sm text-headline-sm text-primary font-bold">20 de Maio de 2024</div>
+                    <img src="Fotosdalinhadotempo/Versao Bebe.jpeg" alt="Versão Bebê" class="w-full rounded-xl mt-2">
+                  </div>
+                </div>
+                <!-- Center Glowing Pulsing Golden Node -->
+                <div
+                  class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center shadow-[0_0_20px_rgba(242,202,80,0.75)] z-20">
+                  <div class="w-3.5 h-3.5 rounded-full bg-primary animate-ping opacity-75"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-primary absolute"></div>
+                </div>
+                <!-- Horizontal connector line (mobile: right, desktop: right to card) -->
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block"
+                  style="left:50%; width:calc(50% - 2.5rem); height:3px; background:linear-gradient(to right, #f2ca50, rgba(242,202,80,0.3));">
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 md:hidden"
+                  style="left:1rem; width:2rem; height:3px; background:linear-gradient(to right, #f2ca50, rgba(242,202,80,0.3));">
+                </div>
+                <div class="hidden md:block md:w-1/2 md:pl-12"></div>
+              </div>
+
+              <!-- Milestone 2: 15 de Setembro de 2024 (Right on desktop) -->
+              <div
+                class="relative flex flex-col md:flex-row items-start md:items-center timeline-item transition-all duration-700">
+                <div class="hidden md:block md:w-1/2 md:pr-12"></div>
+                <!-- Center Radiant Golden Node -->
+                <div
+                  class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-primary-fixed flex items-center justify-center shadow-[0_0_20px_rgba(255,224,136,0.8)] z-20">
+                  <div class="w-2.5 h-2.5 rounded-full bg-primary-fixed"></div>
+                </div>
+                <!-- Horizontal connector line (mobile: right, desktop: left from card to node) -->
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block"
+                  style="right:50%; width:calc(50% - 2.5rem); height:3px; background:linear-gradient(to left, #ffe088, rgba(255,224,136,0.3));">
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 md:hidden"
+                  style="left:1rem; width:2rem; height:3px; background:linear-gradient(to right, #ffe088, rgba(255,224,136,0.3));">
+                </div>
+                <div class="md:w-1/2 md:pl-12 pl-12 md:pl-0 text-left w-full">
+                  <div
+                    class="p-6 rounded-2xl bg-surface-container-low/85 backdrop-blur-xl border border-primary/25 shadow-[0_10px_35px_rgba(16,9,39,0.7),0_0_18px_rgba(242,202,80,0.12)] hover:border-primary/50 transition-all group">
+                    <div
+                      class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-primary-fixed/20 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-2">
+                      <span class="material-symbols-outlined text-[14px]">chat_bubble</span>
+                      <span>Primeira Conexão</span>
+                    </div>
+                    <div class="font-headline-sm text-headline-sm text-primary-fixed font-bold">15 de Setembro de 2024
+                    </div>
+                    <img src="Fotosdalinhadotempo/Versao Crianca.jpeg" alt="Versão Criança" class="w-full rounded-xl mt-2">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Milestone 3: 20 de Dezembro de 2024 (Left on desktop, Silence/Muted Point) -->
+              <div
+                class="relative flex flex-col md:flex-row items-start md:items-center timeline-item transition-all duration-700">
+                <div class="md:w-1/2 md:pr-12 pl-12 md:pl-0 text-left md:text-right w-full">
+                  <div
+                    class="p-6 rounded-2xl bg-surface-container-low/60 backdrop-blur-xl border border-outline-variant/40 shadow-[0_10px_35px_rgba(16,9,39,0.5)] hover:border-outline transition-all group">
+                    <div
+                      class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-surface-variant/80 text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-2">
+                      <span class="material-symbols-outlined text-[14px]">nights_stay</span>
+                      <span>Silêncio &amp; Presença</span>
+                    </div>
+                    <div class="font-headline-sm text-headline-sm text-on-surface-variant/90 font-bold">20 de Dezembro
+                      de 2024</div>
+                    <img src="Fotosdalinhadotempo/Adolescente17.jpeg" alt="Adolescente 17" class="w-full h-48 object-cover rounded-xl mt-2">
+                  </div>
+                </div>
+                <!-- Center Muted Subtle Node -->
+                <div
+                  class="absolute left-4 md:left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-surface-container-high border-2 border-outline-variant/60 flex items-center justify-center shadow-[0_0_12px_rgba(77,70,53,0.4)] z-20">
+                  <div class="w-2 h-2 rounded-full bg-outline"></div>
+                </div>
+                <!-- Horizontal connector line (muted) -->
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block"
+                  style="left:50%; width:calc(50% - 2.5rem); height:3px; background:linear-gradient(to right, #99907c, rgba(153,144,124,0.3));">
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 md:hidden"
+                  style="left:1rem; width:2rem; height:3px; background:linear-gradient(to right, #99907c, rgba(153,144,124,0.3));">
+                </div>
+                <div class="hidden md:block md:w-1/2 md:pl-12"></div>
+              </div>
+
+              <!-- Milestone 4: 1 de Maio de 2025 (Right on desktop, Warm Glow Reconnection) -->
+              <div
+                class="relative flex flex-col md:flex-row items-start md:items-center timeline-item transition-all duration-700">
+                <div class="hidden md:block md:w-1/2 md:pr-12"></div>
+                <!-- Center Pulsing Warm Golden Node -->
+                <div
+                  class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center shadow-[0_0_22px_rgba(242,202,80,0.8)] z-20">
+                  <div class="w-3.5 h-3.5 rounded-full bg-primary/60 animate-ping opacity-60"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-primary absolute"></div>
+                </div>
+                
+                <!-- Horizontal connector line (desktop: left from card to node) -->
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block"
+                  style="right:50%; width:calc(50% - 2.5rem); height:3px; background:linear-gradient(to left, #f2ca50, rgba(242,202,80,0.3));">
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 md:hidden"
+                  style="left:1rem; width:2rem; height:3px; background:linear-gradient(to right, #f2ca50, rgba(242,202,80,0.3));">
+                </div>
+                <div class="md:w-1/2 md:pl-12 pl-12 md:pl-0 text-left w-full">
+                  <div
+                    class="p-6 rounded-2xl bg-surface-container-low/85 backdrop-blur-xl border border-primary/25 shadow-[0_10px_35px_rgba(16,9,39,0.7),0_0_18px_rgba(242,202,80,0.12)] hover:border-primary/50 transition-all group">
+                    <div
+                      class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-2">
+                      <span class="material-symbols-outlined text-[14px]">autorenew</span>
+                      <span>Reencontro</span>
+                    </div>
+                    <div class="font-headline-sm text-headline-sm text-primary font-bold">1 de Maio de 2025</div>
+                    <img src="Fotosdalinhadotempo/Adolescente17 (2).jpeg" alt="Adolescente 17" class="w-full h-48 object-cover rounded-xl mt-2">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Milestone 5: 25 de Setembro de 2025 (Left on desktop, Melancholic Silence) -->
+              <div
+                class="relative flex flex-col md:flex-row items-start md:items-center timeline-item transition-all duration-700">
+                <div class="md:w-1/2 md:pr-12 pl-12 md:pl-0 text-left md:text-right w-full">
+                  <div
+                    class="p-6 rounded-2xl bg-surface-container-low/60 backdrop-blur-xl border border-outline-variant/40 shadow-[0_10px_35px_rgba(16,9,39,0.5)] hover:border-outline transition-all group">
+                    <div
+                      class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-surface-variant/80 text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-2">
+                      <span class="material-symbols-outlined text-[14px]">hourglass_empty</span>
+                      <span>Pausa no Tempo</span>
+                    </div>
+                    <div class="font-headline-sm text-headline-sm text-on-surface-variant/90 font-bold">25 de Setembro
+                      de 2025</div>
+                    <img src="Fotosdalinhadotempo/Jovem18.jpeg" alt="Jovem 18" class="w-full h-48 object-cover rounded-xl mt-2">
+                  </div>
+                </div>
+                <!-- Center Muted Subtle Node -->
+                <div
+                  class="absolute left-4 md:left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-surface-container-high border-2 border-outline-variant/60 flex items-center justify-center shadow-[0_0_12px_rgba(77,70,53,0.4)] z-20">
+                  <div class="w-2 h-2 rounded-full bg-outline"></div>
+                </div>
+                <!-- Horizontal connector line (muted) -->
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block"
+                  style="left:50%; width:calc(50% - 2.5rem); height:3px; background:linear-gradient(to right, #99907c, rgba(153,144,124,0.3));">
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 md:hidden"
+                  style="left:1rem; width:2rem; height:3px; background:linear-gradient(to right, #99907c, rgba(153,144,124,0.3));">
+                </div>
+                <div class="hidden md:block md:w-1/2 md:pl-12"></div>
+              </div>
+
+              <!-- Milestone 6: 28 de Março de 2026 (Right on desktop, Triumphal Reconnection) -->
+              <div
+                class="relative flex flex-col md:flex-row items-start md:items-center timeline-item transition-all duration-700">
+                <div class="hidden md:block md:w-1/2 md:pr-12"></div>
+                <!-- Center Triumphal Gilded Node with Sparkling Halo -->
+                <div
+                  class="absolute left-4 md:left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-gradient-to-tr from-primary to-secondary p-0.5 shadow-[0_0_30px_rgba(242,202,80,0.95)] z-20 animate-pulse">
+                  <div class="w-full h-full rounded-full bg-surface-container-lowest flex items-center justify-center">
+                    <div class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-primary to-[#ffe088]"></div>
+                  </div>
+                </div>
+                <!-- Horizontal connector line (triumphal glow) -->
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 hidden md:block"
+                  style="right:50%; width:calc(50% - 2.5rem); height:3px; background:linear-gradient(to left, #f2ca50, rgba(242,202,80,0.3)); box-shadow:0 0 8px rgba(242,202,80,0.4);">
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 md:hidden"
+                  style="left:1rem; width:2rem; height:3px; background:linear-gradient(to right, #f2ca50, rgba(242,202,80,0.3));">
+                </div>
+                <div class="md:w-1/2 md:pl-12 pl-12 md:pl-0 text-left w-full">
+                  <div
+                    class="p-6 rounded-2xl bg-surface-container-low/90 backdrop-blur-xl border-2 border-primary/40 shadow-[0_12px_40px_rgba(16,9,39,0.85),0_0_25px_rgba(242,202,80,0.22)] hover:border-primary transition-all group">
+                    <div
+                      class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider mb-2">
+                      <span class="material-symbols-outlined text-[14px]">all_inclusive</span>
+                      <span>Reencontro Definitivo</span>
+                    </div>
+                    <div class="font-headline-sm text-headline-sm text-primary font-bold">28 de Março de 2026</div>
+                    <video src="Fotosdalinhadotempo/Patty19.mp4" controls class="w-full h-48 object-cover rounded-xl mt-2"></video>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Emotional Closing Statement Card with Slow Golden Glow Animation -->
+          <div class="mt-space-2xl max-w-3xl mx-auto timeline-item transition-all duration-700">
+            <div
+              class="relative p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-surface-container-low/90 to-surface-container/90 backdrop-blur-2xl border-2 border-primary/45 shadow-[0_20px_65px_rgba(16,9,39,0.95),0_0_40px_rgba(242,202,80,0.25)] animate-[pulse_4s_ease-in-out_infinite] text-center overflow-hidden">
+              <!-- Subtle golden corner accents -->
+              <div class="absolute -top-12 -left-12 w-32 h-32 rounded-full bg-primary/10 blur-2xl pointer-events-none">
+              </div>
+              <div
+                class="absolute -bottom-12 -right-12 w-32 h-32 rounded-full bg-secondary/10 blur-2xl pointer-events-none">
+              </div>
+
+              <div
+                class="w-12 h-12 rounded-full bg-primary/15 text-primary mx-auto mb-space-sm flex items-center justify-center shadow-inner">
+                <span class="material-symbols-outlined text-[26px]">favorite</span>
+              </div>
+
+              <div class="font-headline-md text-headline-md text-on-surface leading-relaxed font-serif max-w-2xl mx-auto space-y-space-sm">
+                <p>“Houve momentos em que a vida colocou uma certa distância entre nós. Houve pausas, silêncios e dias em que talvez parecêssemos estar mais longe um do outro.</p>
+
+                <p>Mas, mesmo nesses momentos, aquilo que sinto por ti nunca deixou de existir.</p>
+
+                <p>Tu continuaste a ser uma presença especial na minha vida, mesmo quando não estavas tão presente nela. Um brilho que, de alguma forma, nunca se apagou.</p>
+
+                <p>E talvez o mais bonito seja que tu nem percebes o quanto me influenciaste.</p>
+
+                <p>Mudaste-me de maneiras que provavelmente nunca imaginaste. Fizeste-me pensar mais sobre quem sou, sobre quem quero ser e sobre a pessoa que ainda quero tornar-me.</p>
+
+                <p>Talvez nunca tenhas pedido para ser essa inspiração, mas acabaste por ser.</p>
+
+                <p>E por isso, neste dia tão teu, quero apenas agradecer por fazeres parte da minha história.</p>
+
+                <p class="font-bold text-primary">Feliz aniversário, Patrícia. ❤️</p>
+
+                <p>Que os teus 20 anos sejam cheios de vida, sonhos, sorrisos e momentos que valham a pena guardar para sempre.</p>
+
+                <p>E que nunca te esqueças do quanto és especial.</p>
+
+                <p class="font-bold text-primary">Continua a florescer. 🌹</p>
+
+                <p class="text-right italic">”</p>
+              </div>
+
+              <div
+                class="mt-space-md flex items-center justify-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest">
+                <span class="w-8 h-px bg-primary/40"></span>
+                <span>Andy</span>
+                <span class="w-8 h-px bg-primary/40"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- ======================================================== -->
+      <!-- SEÇÃO 6: PARABÉNS & INTERATIVIDADE MÁGICA               -->
+      <!-- ======================================================== -->
+      <section class="w-full px-margin-mobile lg:px-margin py-space-2xl text-center relative overflow-hidden"
+        id="felicitacoes">
+        <div class="max-w-2xl mx-auto flex flex-col items-center">
+          <div
+            class="w-20 h-20 rounded-full bg-gradient-to-tr from-secondary-container to-primary flex items-center justify-center shadow-[0_0_40px_rgba(242,202,80,0.4)] mb-space-md">
+            <span class="material-symbols-outlined text-on-primary text-[42px]">celebration</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold mb-space-xs">
+            Faça Parte Deste Dia Mágico
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
+            Feito para celebrar a existência radiante da Patrícia. Carregue no botão dourado para liberar uma chuva de
+            confetes e felicitações comemorativas.
+          </p>
+          <!-- Mega Celebratory Interactive Button -->
+          <button
+            class="px-space-xl py-space-md rounded-full bg-gradient-to-r from-primary via-primary-fixed to-primary text-on-primary font-label-lg text-label-lg uppercase tracking-widest font-bold shadow-[0_10px_35px_rgba(242,202,80,0.45)] hover:shadow-[0_15px_50px_rgba(242,202,80,0.7)] hover:scale-105 active:scale-95 transition-all flex items-center gap-space-sm cursor-pointer"
+            id="confetti-trigger-btn" type="button">
+            <span class="material-symbols-outlined text-[24px]">auto_awesome</span>
+            <span>Parabéns 🎉</span>
+          </button>
+          <!-- Dynamic Celebration Alert Box (Appears on click) -->
+          <div
+            class="opacity-0 translate-y-4 pointer-events-none transition-all duration-500 mt-space-md px-space-lg py-space-sm rounded-full bg-surface-container-high/90 backdrop-blur-xl shadow-2xl flex items-center gap-space-sm"
+            id="celebration-toast">
+            <span class="material-symbols-outlined text-secondary text-[22px]">celebration</span>
+            <span class="font-title-md text-title-md text-primary font-semibold">Parabéns, Patrícia! 🥳💖✨ Toda a
+              felicidade do mundo!</span>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================================== -->
+      <!-- MODAL DE VÍDEO CINEMATOGRÁFICO INTERATIVO               -->
+      <!-- ======================================================== -->
+      <div
+        class="fixed inset-0 z-50 bg-surface-container-lowest/90 backdrop-blur-2xl opacity-0 pointer-events-none transition-all duration-300 flex items-center justify-center p-margin-mobile"
+        id="video-modal">
+        <div
+          class="relative w-full max-w-3xl bg-surface-container rounded-2xl overflow-hidden shadow-2xl scale-95 transition-transform duration-300"
+          id="video-modal-card">
+          <!-- Modal Header -->
+          <div class="flex items-center justify-between p-space-md bg-surface-container-high">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[20px]">movie</span>
+              <h3 class="font-title-lg text-title-lg text-on-surface font-semibold" id="modal-video-title">Vídeo
+                Comemorativo</h3>
+            </div>
+            <button aria-label="Fechar Janela de Vídeo"
+              class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors"
+              onclick="closeVideoModal()" type="button">
+              <span class="material-symbols-outlined text-[20px]">close</span>
+            </button>
+          </div>
+          <!-- Cinematic Simulated Video Player Window -->
+          <div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
+            <img class="w-full h-full object-cover opacity-60"
+              data-alt="Cinematic frame of Patrícia Amélia at her 20th birthday celebration surrounded by golden champagne lights, joyful elegance, warm cinematic aesthetic."
+              id="modal-video-poster"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlAtGIgBbM6or50WxWYuRrqsQRREUCHQ9jZ6-n-I2prR_2tcxBJdyCBxjFxbK9xp4GT9jFAVWBbkxEdAVbJ8gSps0i5GRcwgrnt7Hp048HlWfygPMnkSgcN67OULFOJ9wzP-9du3qn_9hfAuq4h6cl1sq41Nvh37-XY4BRJrQz2ttZKsWVZY3sDPPmguTbcUi1tqSnjBguRfqrvPm2NFUQRM654ydLBiJUiuaFN-5IHkMKdCuK3nKx" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30"></div>
+            <!-- Central Player Controls -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+              <div
+                class="w-20 h-20 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_0_40px_rgba(242,202,80,0.85)] mb-space-sm animate-pulse cursor-pointer">
+                <span class="material-symbols-outlined text-[44px] ml-1"
+                  style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface max-w-lg drop-shadow" id="modal-video-desc">
+                Reproduzindo registro comemorativo dos 20 anos de Patrícia.
+              </p>
+              <div class="mt-4 flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+                <span class="px-2.5 py-0.5 rounded bg-white/20 text-white font-mono">1080p HD</span>
+                <span>• Áudio Original de Celebração</span>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Footer -->
+          <div class="p-space-md bg-surface-container flex items-center justify-between">
+            <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Momento Histórico • 22 de
+              Setembro</span>
+            <button
+              class="px-space-md py-1.5 rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-all"
+              onclick="closeVideoModal()" type="button">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Inline Script for Carousel Drag/Scroll, Video Modal, Confetti Canvas Particles & Timeline Intersection Observer -->
+      <script>
+          (function () {
+            // 1. INFINITE CAROUSEL LOGIC
+            const track = document.getElementById('memory-track');
+            const prevBtn = document.getElementById('carousel-prev');
+            const nextBtn = document.getElementById('carousel-next');
+            const dotsContainer = document.getElementById('carousel-dots');
+
+            if (track) {
+              // Clone all items for seamless infinite loop
+              const items = Array.from(track.children);
+              items.forEach(item => {
+                const clone = item.cloneNode(true);
+                clone.setAttribute('aria-hidden', 'true');
+                // Remove video overlays, play buttons, and IDs from clones to avoid duplicate ID conflicts
+                clone.querySelectorAll('[id^="ov"]').forEach(el => el.remove());
+                clone.querySelectorAll('button[onclick]').forEach(el => el.remove());
+                clone.querySelectorAll('[id^="vid"]').forEach(el => el.removeAttribute('id'));
+                track.appendChild(clone);
+              });
+
+              let scrollSpeed = 0.5;
+              let scrollPos = 0;
+              let isPaused = false;
+              let isDragging = false;
+              let startX = 0;
+              let scrollStart = 0;
+
+              function getHalfWidth() {
+                let totalWidth = 0;
+                for (let i = 0; i < items.length; i++) {
+                  totalWidth += items[i].offsetWidth + 28;
+                }
+                return totalWidth;
+              }
+
+              function autoScroll() {
+                if (!isPaused && !isDragging) {
+                  scrollPos += scrollSpeed;
+                  const halfWidth = getHalfWidth();
+                  if (scrollPos >= halfWidth) {
+                    scrollPos -= halfWidth;
+                  }
+                  track.scrollLeft = scrollPos;
+                } else {
+                  scrollPos = track.scrollLeft;
+                }
+                requestAnimationFrame(autoScroll);
+              }
+
+              track.addEventListener('mouseenter', () => { isPaused = true; });
+              track.addEventListener('mouseleave', () => { isPaused = false; });
+              track.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                startX = e.touches[0].clientX;
+                scrollStart = track.scrollLeft;
+              }, { passive: true });
+              track.addEventListener('touchmove', (e) => {
+                const diff = startX - e.touches[0].clientX;
+                track.scrollLeft = scrollStart + diff;
+                scrollPos = track.scrollLeft;
+              }, { passive: true });
+              track.addEventListener('touchend', () => { isDragging = false; });
+              track.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                startX = e.clientX;
+                scrollStart = track.scrollLeft;
+                track.style.cursor = 'grabbing';
+              });
+              track.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const diff = startX - e.clientX;
+                track.scrollLeft = scrollStart + diff;
+                scrollPos = track.scrollLeft;
+              });
+              track.addEventListener('mouseup', () => { isDragging = false; track.style.cursor = 'grab'; });
+              track.addEventListener('mouseleave', () => { isDragging = false; track.style.cursor = 'grab'; });
+
+              if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                  scrollPos -= 378;
+                  track.scrollLeft = scrollPos;
+                });
+              }
+              if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                  scrollPos += 378;
+                  track.scrollLeft = scrollPos;
+                });
+              }
+
+              requestAnimationFrame(autoScroll);
+            }
+
+            // 2. VIDEO MODAL CONTROLS
+            window.openVideoModal = function (title, desc) {
+              const modal = document.getElementById('video-modal');
+              const card = document.getElementById('video-modal-card');
+              const modalTitle = document.getElementById('modal-video-title');
+              const modalDesc = document.getElementById('modal-video-desc');
+
+              if (modalTitle) modalTitle.textContent = title;
+              if (modalDesc) modalDesc.textContent = desc;
+
+              modal.classList.remove('opacity-0', 'pointer-events-none');
+              modal.classList.add('opacity-100');
+              card.classList.remove('scale-95');
+              card.classList.add('scale-100');
+            };
+
+            window.closeVideoModal = function () {
+              const modal = document.getElementById('video-modal');
+              const card = document.getElementById('video-modal-card');
+              modal.classList.remove('opacity-100');
+              modal.classList.add('opacity-0', 'pointer-events-none');
+              card.classList.remove('scale-100');
+              card.classList.add('scale-95');
+            };
+
+            // 3. CONTINUOUS BACKGROUND PARTICLES + CANNON CONFETTI ENGINE
+            const canvas = document.getElementById('birthday-canvas');
+            if (canvas) {
+              const ctx = canvas.getContext('2d');
+              let width = (canvas.width = window.innerWidth);
+              let height = (canvas.height = window.innerHeight);
+
+              window.addEventListener('resize', () => {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+              });
+
+              // Ambient floating particles (stars and soft rose/gold petals)
+              const ambientParticles = [];
+              const colors = ['#f2ca50', '#ffd9e4', '#ffb0cd', '#eaddff', '#ffe088'];
+
+              for (let i = 0; i < 45; i++) {
+                ambientParticles.push({
+                  x: Math.random() * width,
+                  y: Math.random() * height,
+                  size: Math.random() * 3.5 + 1.5,
+                  speedY: Math.random() * 0.7 + 0.3,
+                  speedX: (Math.random() - 0.5) * 0.4,
+                  color: colors[Math.floor(Math.random() * colors.length)],
+                  alpha: Math.random() * 0.7 + 0.2,
+                  rotation: Math.random() * 360,
+                  rotationSpeed: (Math.random() - 0.5) * 2
+                });
+              }
+
+              // Active explosion particles
+              let confettiParticles = [];
+
+              function launchConfetti(count = 140) {
+                const originX = width / 2;
+                const originY = height / 2;
+                for (let i = 0; i < count; i++) {
+                  const angle = Math.random() * Math.PI * 2;
+                  const velocity = Math.random() * 12 + 4;
+                  confettiParticles.push({
+                    x: originX,
+                    y: originY,
+                    vx: Math.cos(angle) * velocity,
+                    vy: Math.sin(angle) * velocity - 3,
+                    gravity: 0.22,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    size: Math.random() * 9 + 4,
+                    rotation: Math.random() * 360,
+                    rotSpeed: (Math.random() - 0.5) * 15,
+                    alpha: 1
+                  });
+                }
+              }
+              window.launchConfetti = launchConfetti;
+
+              // Render loop
+              function animate() {
+                ctx.clearRect(0, 0, width, height);
+
+                // Update ambient particles
+                for (let p of ambientParticles) {
+                  p.y += p.speedY;
+                  p.x += p.speedX;
+                  p.rotation += p.rotationSpeed;
+                  if (p.y > height) {
+                    p.y = -10;
+                    p.x = Math.random() * width;
+                  }
+                  ctx.save();
+                  ctx.translate(p.x, p.y);
+                  ctx.rotate((p.rotation * Math.PI) / 180);
+                  ctx.globalAlpha = p.alpha;
+                  ctx.fillStyle = p.color;
+                  ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+                  ctx.restore();
+                }
+
+                // Update explosion confetti
+                for (let i = confettiParticles.length - 1; i >= 0; i--) {
+                  const cp = confettiParticles[i];
+                  cp.x += cp.vx;
+                  cp.y += cp.vy;
+                  cp.vy += cp.gravity;
+                  cp.rotation += cp.rotSpeed;
+                  cp.alpha -= 0.008;
+
+                  if (cp.alpha <= 0 || cp.y > height) {
+                    confettiParticles.splice(i, 1);
+                    continue;
+                  }
+
+                  ctx.save();
+                  ctx.translate(cp.x, cp.y);
+                  ctx.rotate((cp.rotation * Math.PI) / 180);
+                  ctx.globalAlpha = cp.alpha;
+                  ctx.fillStyle = cp.color;
+                  ctx.fillRect(-cp.size / 2, -cp.size / 2, cp.size, cp.size * 0.6);
+                  ctx.restore();
+                }
+
+                requestAnimationFrame(animate);
+              }
+              animate();
+
+            }
+
+      // 5. TIMELINE SCROLL ANIMATION (CSS only, no JS needed)
+          })();
+
+      </script>
+      <script>
+      // CONFETTI BUTTON (isolated script - won't be affected by errors above)
+      (function() {
+        var btn = document.getElementById('confetti-trigger-btn');
+        var toast = document.getElementById('celebration-toast');
+        if (!btn) return;
+        btn.addEventListener('click', function() {
+          var cols = ['#f2ca50','#ffd9e4','#ffb0cd','#eaddff','#ffe088','#ff6b8a','#c1a3ff'];
+          var cx = window.innerWidth / 2;
+          var cy = window.innerHeight / 2;
+          for (var i = 0; i < 150; i++) {
+            (function() {
+              var el = document.createElement('div');
+              var size = 5 + Math.random() * 7;
+              el.style.cssText = 'position:fixed;width:'+size+'px;height:'+size+'px;background:'+cols[~~(Math.random()*cols.length)]+';pointer-events:none;z-index:9999;border-radius:'+(Math.random()>0.5?'50%':'1px')+';left:'+cx+'px;top:'+cy+'px;opacity:1;';
+              document.body.appendChild(el);
+              var angle = Math.random() * Math.PI * 2;
+              var speed = 150 + Math.random() * 400;
+              var vx = Math.cos(angle) * speed;
+              var vy = Math.sin(angle) * speed - 150;
+              var start = performance.now();
+              function step(now) {
+                var t = (now - start) / 1000;
+                if (t > 2.5 || !el.parentNode) { if (el.parentNode) el.remove(); return; }
+                el.style.left = (cx + vx * t) + 'px';
+                el.style.top = (cy + vy * t + 400 * t * t) + 'px';
+                el.style.opacity = Math.max(0, 1 - t / 2.5);
+                el.style.transform = 'rotate(' + (360 * t * (Math.random() > 0.5 ? 1 : -1)) + 'deg)';
+                requestAnimationFrame(step);
+              }
+              requestAnimationFrame(step);
+            })();
+          }
+          if (toast) {
+            toast.classList.remove('opacity-0','translate-y-4','pointer-events-none');
+            toast.classList.add('opacity-100','translate-y-0');
+            setTimeout(function(){
+              toast.classList.add('opacity-0','translate-y-4','pointer-events-none');
+              toast.classList.remove('opacity-100','translate-y-0');
+            }, 4500);
+          }
+        });
+      })();
+      </script>
+    </div>
+  </main>
+  <footer class="w-full bg-surface-container-lowest/90 backdrop-blur-2xl relative z-10 pt-space-2xl pb-space-xl">
+    <div class="w-full px-margin-mobile lg:px-margin">
+      <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-xl">
+        <div
+          class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center mb-space-md shadow-[0_0_24px_rgba(212,175,55,0.2)]">
+          <span class="material-symbols-outlined text-primary text-[28px]">auto_awesome</span></div>
+        <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs font-semibold">Brinde aos 20 Anos de
+          Patrícia</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg max-w-lg">Desejo tudo de bom Patrícia Amélia Daniel Chilaule neste marco inesquecível de 22 de Setembro.</p>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-space-lg opacity-60">
+        Feito com carinho para Patrícia Amélia — 22 de Setembro de 2026
+      </p>
+    </div>
+  </footer>
+
+  <script>
+  // REAL-TIME LIFE COUNTER — Patrícia Amélia Daniel Chilaule (22/09/2006)
+  (function() {
+    var elAnos = document.getElementById('counter-anos');
+    var elDias = document.getElementById('counter-dias');
+    var elHoras = document.getElementById('counter-horas');
+    if (!elAnos || !elDias || !elHoras) return;
+
+    var NASCIMENTO = new Date(2006, 8, 22, 0, 0, 0);
+
+    function formatNum(n) {
+      return Math.floor(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    }
+
+    function atualizarIdade() {
+      var agora = new Date();
+
+      var anos = agora.getFullYear() - NASCIMENTO.getFullYear();
+      if (agora.getMonth() < 8 || (agora.getMonth() === 8 && agora.getDate() < 22)) {
+        anos--;
+      }
+
+      var diffMs = agora.getTime() - NASCIMENTO.getTime();
+      var diffDias = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+      var totalHorasMs = agora.getTime() - NASCIMENTO.getTime();
+      var totalHoras = Math.floor(totalHorasMs / (1000 * 60 * 60));
+
+      elAnos.textContent = formatNum(anos);
+      elDias.textContent = formatNum(diffDias);
+      elHoras.textContent = formatNum(totalHoras);
+    }
+
+    atualizarIdade();
+    setInterval(atualizarIdade, 1000);
+  })();
+  </script>
+</body>
+
+</html>
